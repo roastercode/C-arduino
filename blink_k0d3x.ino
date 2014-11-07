@@ -1,6 +1,22 @@
+# C - Arduino
+# License    : GNU GPL v3 or later
+# Author     : Aurélien DESBRIERES
+# Mail       : aurelien@hackers.camp
+# Project    : Blink 1 sec
+# Created on : Fri Nov 7 06:50:13 2014
+#
+# References
+#
+# C - Arduino env
+#
+#
+# Course material
+#
+
+
 /*
   Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
+  Turns on an LED on for half a second, then off for half a second, repeatedly.
  
   This example code is in the public domain.
  */
