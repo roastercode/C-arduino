@@ -24,8 +24,8 @@
 #define Pous1On !digitalRead (Pous1)
 #define Pous2On !digitalRead (Pous2)
 #define Led 5
-#define LedOn digitalWrite (Led,LOW) ;
-#define LedOff digitalWrite (Led,HIGH) ;
+#define LedOn digitalWrite (Led,HIGH) ;
+#define LedOff digitalWrite (Led,LOW) ;
 
 void setup () {
   pinMode (Pous1, INPUT) ;
@@ -35,5 +35,5 @@ void setup () {
 
 void loop () {
   if (Pous1On) { LedOn ; delay (20); }
-  if (Pous1On) { LedOn ; delay (20); }
+  if (Pous2On) { LedOff ; delay (20); }
 }
