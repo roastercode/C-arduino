@@ -18,16 +18,16 @@
 
 */
 
-int bp = 2; // button pin
-int lp1 = 5; // led pin
+int bp = 2;                        // Button pin
+int lp1 = 5;                       // Led pin
 int lp2 = 6;
-int cs = 2; // current state
+int cs = 2;                        // Current state
 
 
 void setup() {
-  pinMode(bp, INPUT);      // set the switch pin to be an input
-  pinMode(lp1, OUTPUT);   // set the yellow LED pin to be an output
-  pinMode(lp2, OUTPUT);   // set the red LED pin to be an output
+  pinMode(bp, INPUT);              // Set the switch pin to be an input
+  pinMode(lp1, OUTPUT);            // Set the LED1 pin to be an output
+  pinMode(lp2, OUTPUT);            // Set the LED2 pin to be an output
 }
 
 void loop()
@@ -36,20 +36,20 @@ void loop()
     {
       switch (cs)
 	{
-	case 2:                            // no LEDs on
-	  digitalWrite(lp1, LOW);    // turn on the LED 1
+	case 2:                    // No LEDs on
+	  digitalWrite(lp1, LOW);  // Turn on the LED 1
 	  cs++;
 	  break;
 
-	case 3:                            //yellow LED is on
-	  digitalWrite(lp2, LOW);    // turn on the LED 2
+	case 3:                    // LED1 is on
+	  digitalWrite(lp2, LOW);  // Turn on the LED 2
 	  cs++;
 	  break;
 
-	default:                           //all LEDs are on
-	  digitalWrite(lp1, HIGH);    // turn off the LED 1
-	  digitalWrite(lp2, HIGH);    // turn off the LED 2
-	  cs = 2;                  //reset the counter
+	default:                   // All LEDs are on
+	  digitalWrite(lp1, HIGH); // Turn off the LED 1
+	  digitalWrite(lp2, HIGH); // Turn off the LED 2
+	  cs = 2;                  // Reset the counter
 	}
     }
 }
