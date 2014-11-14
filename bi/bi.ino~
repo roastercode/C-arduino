@@ -34,9 +34,8 @@ void setup(){
   Led1Off;//Led ...defaut OFF
 }
 
-byte cnt=0;
-
 void loop (){
+  byte cnt=0;
   while (1) {
     if (Pous1On) { cnt=0; }
     delay (PeriodeEchant) ;
@@ -45,4 +44,4 @@ void loop (){
   }
   Led1On; delay (500);//500 ms 1/2 s
   Led1Off; delay (500);//500 ms  1/2s
-}
+} 
